@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #222a2a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: translateY(-12%);
+}
+
+.keyboard {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.keyboard-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keyboard-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  margin: 6px 3px 0 3px;
+  max-width: 45px;
+  height: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #818384;
+  color: #ffffff;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.keyboard-button:hover {
+  opacity: 0.6;
+}
+
+.keyboard-button-big {
+  max-width: 75px;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-box {
+  width: 75px;
+  height: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-transform: uppercase;
+  user-select: none;
+  border: 3px solid black;
+  margin: 6px 3px 0 3px;
+}
+
+.green-bg {
+  background: #42713e;
+}
+
+.yellow-bg {
+  background: #917f2e;
+}
+
+.grey-bg {
+  background: #495959;
+}
